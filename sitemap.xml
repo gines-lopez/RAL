@@ -2,10 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://github.com/gines-lopez/RAL/index.html</loc>
-         <lastmod>2026-08-26</lastmod>
+         <lastmod>2026-09-10</lastmod>
     </url>
     <url>
          <loc>https://github.com/gines-lopez/RAL/includes/abbreviations.html</loc>
-         <lastmod>2026-08-26</lastmod>
+         <lastmod>2026-09-10</lastmod>
+    </url>
+    <url>
+         <loc>https://github.com/gines-lopez/RAL/ut/ut01/0101_SistemasRed.html</loc>
+         <lastmod>2026-09-10</lastmod>
+    </url>
+    <url>
+         <loc>https://github.com/gines-lopez/RAL/ut/ut01/ResumenUT.html</loc>
+         <lastmod>2026-09-10</lastmod>
     </url>
 </urlset>
