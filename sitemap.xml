@@ -2,42 +2,54 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://github.com/gines-lopez/RAL/index.html</loc>
-         <lastmod>2026-09-21</lastmod>
+         <lastmod>2026-09-24</lastmod>
     </url>
     <url>
          <loc>https://github.com/gines-lopez/RAL/includes/abbreviations.html</loc>
-         <lastmod>2026-09-21</lastmod>
+         <lastmod>2026-09-24</lastmod>
     </url>
     <url>
          <loc>https://github.com/gines-lopez/RAL/ut/ut01/0101_SistemasRed.html</loc>
-         <lastmod>2026-09-21</lastmod>
+         <lastmod>2026-09-24</lastmod>
     </url>
     <url>
          <loc>https://github.com/gines-lopez/RAL/ut/ut01/0102_Componentes.html</loc>
-         <lastmod>2026-09-21</lastmod>
+         <lastmod>2026-09-24</lastmod>
     </url>
     <url>
          <loc>https://github.com/gines-lopez/RAL/ut/ut01/0103_ClasificacionRedes.html</loc>
-         <lastmod>2026-09-21</lastmod>
+         <lastmod>2026-09-24</lastmod>
     </url>
     <url>
          <loc>https://github.com/gines-lopez/RAL/ut/ut01/0104_Transmision.html</loc>
-         <lastmod>2026-09-21</lastmod>
+         <lastmod>2026-09-24</lastmod>
     </url>
     <url>
          <loc>https://github.com/gines-lopez/RAL/ut/ut01/0105_Normalizacion.html</loc>
-         <lastmod>2026-09-21</lastmod>
+         <lastmod>2026-09-24</lastmod>
     </url>
     <url>
          <loc>https://github.com/gines-lopez/RAL/ut/ut01/ResumenUT.html</loc>
-         <lastmod>2026-09-21</lastmod>
+         <lastmod>2026-09-24</lastmod>
     </url>
     <url>
          <loc>https://github.com/gines-lopez/RAL/ut/ut02/0201_MediosTransmision.html</loc>
-         <lastmod>2026-09-21</lastmod>
+         <lastmod>2026-09-24</lastmod>
+    </url>
+    <url>
+         <loc>https://github.com/gines-lopez/RAL/ut/ut02/0202_ParTrenzado.html</loc>
+         <lastmod>2026-09-24</lastmod>
+    </url>
+    <url>
+         <loc>https://github.com/gines-lopez/RAL/ut/ut02/0203_Coaxial.html</loc>
+         <lastmod>2026-09-24</lastmod>
+    </url>
+    <url>
+         <loc>https://github.com/gines-lopez/RAL/ut/ut02/0204_FibraOptica.html</loc>
+         <lastmod>2026-09-24</lastmod>
     </url>
     <url>
          <loc>https://github.com/gines-lopez/RAL/ut/ut02/ResumenUT.html</loc>
-         <lastmod>2026-09-21</lastmod>
+         <lastmod>2026-09-24</lastmod>
     </url>
 </urlset>
