@@ -1,0 +1,1654 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://github.com/gines-lopez/RAL/ut/ut02/0205_MediosNoGuiados.html">
+      
+      
+        <link rel="prev" href="0204_FibraOptica.html">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Medios no guiados - Redes de Área Local</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/extra_index.css">
+    
+      <link rel="stylesheet" href="../../css/extra_general.css">
+    
+      <link rel="stylesheet" href="../../css/extra_pd.css">
+    
+      <link rel="stylesheet" href="../../css/extra_tablasresumen.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#medios-no-guiados" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../../index.html" title="Redes de Área Local" class="md-header__button md-logo" aria-label="Redes de Área Local" data-md-component="logo">
+      
+  <img src="../../img/ral.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Redes de Área Local
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Medios no guiados
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="blue"  aria-label="Cambiar a modo noche"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo noche" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="blue"  aria-label="Cambiar a modo día"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo día" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../index.html" title="Redes de Área Local" class="md-nav__button md-logo" aria-label="Redes de Área Local" data-md-component="logo">
+      
+  <img src="../../img/ral.png" alt="logo">
+
+    </a>
+    Redes de Área Local
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UT 01. Introducción a redes
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    UT 01. Introducción a redes
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ut01/ResumenUT.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Propuesta didáctica UT 01
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ut01/0101_SistemasRed.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sistemas en red
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ut01/0102_Componentes.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Componentes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ut01/0103_ClasificacionRedes.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Clasificaciones de redes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ut01/0104_Transmision.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Transmisión y perturbación
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ut01/0105_Normalizacion.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Normalización
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UT 02. Medios de transmisión y capa física
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    UT 02. Medios de transmisión y capa física
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ResumenUT.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Propuesta didáctica UT 02
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="0201_MediosTransmision.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Medios de transmisión
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="0202_ParTrenzado.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Par trenzado
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="0203_Coaxial.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cable coaxial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="0204_FibraOptica.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fibra óptica
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Medios no guiados
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="0205_MediosNoGuiados.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Medios no guiados
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#el-espectro-y-las-bandas-de-frecuencia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        El espectro y las bandas de frecuencia
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="El espectro y las bandas de frecuencia">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bandas-libres-ism-y-regulacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bandas libres (ISM) y regulación
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#como-se-propaga-la-senal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cómo se propaga la señal
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estandares-inalambricos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Estándares inalámbricos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#redes-wpan-ieee-80215" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Redes WPAN (IEEE 802.15)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Redes WPAN (IEEE 802.15)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bluetooth-ieee-802151" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bluetooth (IEEE 802.15.1)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zigbee-ieee-802154" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zigbee (IEEE 802.15.4)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nfc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        NFC
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wifi-ieee-80211" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Wi‑Fi (IEEE 802.11)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Wi‑Fi (IEEE 802.11)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#elementos-de-una-red-wifi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Elementos de una red Wi‑Fi
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#estandares-wifi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Estándares Wi‑Fi
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#canales-y-solapamiento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Canales y solapamiento
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#seguridad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Seguridad
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wimax-ieee-80216" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        WiMAX (IEEE 802.16)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#redes-moviles-wwan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Redes móviles (WWAN)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#buenas-practicas-al-desplegar-wifi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Buenas prácticas al desplegar Wi‑Fi
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#actividades" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Actividades
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="medios-no-guiados">📡 Medios no guiados<a class="headerlink" href="#medios-no-guiados" title="Permanent link">&para;</a></h1>
+<p>Los medios no guiados transportan ondas electromagnéticas <strong>sin conductor físico</strong>: la señal se emite mediante una antena y se propaga por el aire. Son la base del Wi‑Fi, el Bluetooth, la telefonía móvil y los radioenlaces.</p>
+<p>Frente a los medios guiados presentan cuatro diferencias que conviene tener siempre presentes:</p>
+<table>
+<thead>
+<tr>
+<th>Característica</th>
+<th>Qué implica</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Medio compartido</strong></td>
+<td>Todos los equipos de la zona que usan la misma frecuencia se reparten el aire; a más usuarios, menos velocidad para cada uno</td>
+</tr>
+<tr>
+<td><strong>Atenuación y obstáculos</strong></td>
+<td>La señal se debilita con la distancia y al atravesar paredes, cristales o estructuras metálicas</td>
+</tr>
+<tr>
+<td><strong>Seguridad</strong></td>
+<td>La señal llega a cualquiera dentro del alcance, por lo que el <strong>cifrado es obligatorio</strong></td>
+</tr>
+<tr>
+<td><strong>Regulación</strong></td>
+<td>No se puede emitir en cualquier frecuencia ni con cualquier potencia: el espectro está regulado</td>
+</tr>
+</tbody>
+</table>
+<h2 id="el-espectro-y-las-bandas-de-frecuencia">El espectro y las bandas de frecuencia<a class="headerlink" href="#el-espectro-y-las-bandas-de-frecuencia" title="Permanent link">&para;</a></h2>
+<p>Las <strong>bandas de frecuencia</strong> funcionan como los carriles de una autopista: cada tecnología tiene asignado el suyo para no estorbar a las demás. Si todas emitieran en la misma frecuencia, se interferirían entre sí y ninguna funcionaría.</p>
+<figure>
+  <a class="glightbox" href="../../img/ut02/espectroradio.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../../img/ut02/espectroradio.png" alt="Espectro electromagnético" style="width: 100%; max-width: 800px; height: auto;"></a>
+  <figcaption>Espectro electromagnético y bandas de frecuencia para comunicaciones inalámbricas</figcaption>
+</figure>
+
+<p><strong>Bandas que usamos en redes:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Banda</th>
+<th>Frecuencias</th>
+<th>Uso habitual</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>VHF</strong></td>
+<td>30 – 300 MHz</td>
+<td>Radio FM</td>
+</tr>
+<tr>
+<td><strong>UHF</strong></td>
+<td>300 MHz – 3 GHz</td>
+<td>TDT, telefonía móvil, banda de 2,4 GHz</td>
+</tr>
+<tr>
+<td><strong>SHF</strong></td>
+<td>3 – 30 GHz</td>
+<td>Wi‑Fi de 5 y 6 GHz, radioenlaces, TV por satélite</td>
+</tr>
+<tr>
+<td><strong>Infrarrojo</strong></td>
+<td>~300 GHz – 400 THz</td>
+<td>Mandos a distancia, algún sistema domótico</td>
+</tr>
+</tbody>
+</table>
+<h3 id="bandas-libres-ism-y-regulacion">Bandas libres (ISM) y regulación<a class="headerlink" href="#bandas-libres-ism-y-regulacion" title="Permanent link">&para;</a></h3>
+<p>Las bandas <strong>ISM</strong> (industriales, científicas y médicas) son de <strong>uso libre</strong>: no hay que pagar licencia, basta con respetar la potencia máxima permitida. Por eso las usan las tecnologías de consumo.</p>
+<table>
+<thead>
+<tr>
+<th>Banda ISM</th>
+<th>Tecnologías</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>2,4 GHz</strong></td>
+<td>Wi‑Fi, Bluetooth, Zigbee, mandos, microondas domésticos</td>
+</tr>
+<tr>
+<td><strong>5 GHz</strong></td>
+<td>Wi‑Fi de alta velocidad</td>
+</tr>
+<tr>
+<td><strong>6 GHz</strong></td>
+<td>Wi‑Fi 6E y Wi‑Fi 7</td>
+</tr>
+<tr>
+<td><strong>868 MHz</strong></td>
+<td>IoT en Europa (Zigbee, LoRa)</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">Uso libre no significa sin normas</p>
+<p>En España, la atribución de bandas se recoge en el <strong>Cuadro Nacional de Atribución de Frecuencias (CNAF)</strong>, publicado por el ministerio competente (<a href="https://avance.digital.gob.es/espectro/Paginas/cnaf.aspx">consulta del CNAF</a>). En Wi‑Fi de 2,4 GHz la potencia máxima permitida es de <strong>100 mW (20 dBm) de PIRE</strong>. Además, la asignación varía entre países: un equipo comprado fuera de la UE puede emitir en canales no permitidos aquí.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Por qué la banda ISM de 2,4 GHz se satura</p>
+<p>Es la banda libre más antigua y en ella conviven Wi‑Fi, Bluetooth, Zigbee, mandos, alarmas… y las fugas de los <strong>hornos microondas</strong>, que trabajan en torno a 2,45 GHz. Es la razón principal por la que el Wi‑Fi doméstico va mal en horas punta.</p>
+</div>
+<h2 id="como-se-propaga-la-senal">Cómo se propaga la señal<a class="headerlink" href="#como-se-propaga-la-senal" title="Permanent link">&para;</a></h2>
+<p>Tres ideas para entender cualquier problema de cobertura:</p>
+<ol>
+<li><strong>A mayor frecuencia, más velocidad pero menos alcance.</strong> Los 2,4 GHz llegan más lejos y atraviesan mejor las paredes; los 5 y 6 GHz ofrecen más velocidad y menos interferencias, pero con menor penetración.</li>
+<li><strong>Los obstáculos atenúan.</strong> Un tabique resta poco, un muro de hormigón o un armario metálico pueden dejar una zona sin cobertura. El metal y el agua son especialmente malos: por eso un <abbr title="Actividades de profundización.">AP</abbr> dentro de un armario de comunicaciones cerrado apenas da señal.</li>
+<li><strong>La señal rebota (multitrayecto).</strong> Llega al receptor por varios caminos y con distinto retardo. Tecnologías como <strong>MIMO</strong> aprovechan estos rebotes usando varias antenas a la vez.</li>
+</ol>
+<p>La calidad se mide con el nivel de señal recibida, en <strong>dBm</strong>: valores en torno a −50 dBm son excelentes, −70 dBm aceptables y por debajo de −80 dBm la conexión es inestable.</p>
+<h2 id="estandares-inalambricos">Estándares inalámbricos<a class="headerlink" href="#estandares-inalambricos" title="Permanent link">&para;</a></h2>
+<p>Los estándares de redes inalámbricas los desarrolla el grupo <strong>IEEE 802</strong>, organizados según el alcance de la red:</p>
+<table>
+<thead>
+<tr>
+<th>Alcance</th>
+<th>Grupo</th>
+<th>Tecnología</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>WPAN</strong> (personal, metros)</td>
+<td>IEEE 802.15</td>
+<td>Bluetooth, Zigbee</td>
+</tr>
+<tr>
+<td><strong>WLAN</strong> (local, edificio)</td>
+<td>IEEE 802.11</td>
+<td>Wi‑Fi</td>
+</tr>
+<tr>
+<td><strong>WMAN</strong> (metropolitana, ciudad)</td>
+<td>IEEE 802.16</td>
+<td>WiMAX</td>
+</tr>
+<tr>
+<td><strong>WWAN</strong> (amplia, país)</td>
+<td>—</td>
+<td>Redes móviles 4G y 5G</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Las redes móviles no son IEEE</p>
+<p>Aunque a veces se cite el estándar IEEE 802.20, las redes móviles actuales (3G, 4G y 5G) las define el <strong>3GPP</strong>, no el IEEE.</p>
+</div>
+<h2 id="redes-wpan-ieee-80215">Redes WPAN (IEEE 802.15)<a class="headerlink" href="#redes-wpan-ieee-80215" title="Permanent link">&para;</a></h2>
+<h3 id="bluetooth-ieee-802151">Bluetooth (IEEE 802.15.1)<a class="headerlink" href="#bluetooth-ieee-802151" title="Permanent link">&para;</a></h3>
+<p>Conecta dispositivos personales a corta distancia: auriculares, ratones, teclados, altavoces, pulseras de actividad o el manos libres del coche.</p>
+<p><strong>Características:</strong></p>
+<ul>
+<li><strong>Alcance</strong> según la clase de potencia: unos 10 m en la clase 2, la de móviles y auriculares; hasta 100 m en la clase 1.</li>
+<li><strong>Banda</strong> de 2,4 GHz, compartida con el Wi‑Fi.</li>
+<li><strong>Emparejamiento</strong> (<em>pairing</em>) entre dos dispositivos, con PIN o confirmación.</li>
+<li><strong>Dos variantes</strong>: <em>Bluetooth Classic</em> (BR/EDR), para audio y transferencia continua, y <strong>BLE</strong> (<em>Bluetooth Low Energy</em>), de consumo mínimo, para wearables y sensores IoT.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Versión</th>
+<th>Año</th>
+<th>Novedad principal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.x</td>
+<td>1999</td>
+<td>Primeras versiones, 1 Mbps</td>
+</tr>
+<tr>
+<td>2.0 + EDR</td>
+<td>2004</td>
+<td>3 Mbps</td>
+</tr>
+<tr>
+<td>3.0 + HS</td>
+<td>2009</td>
+<td>Transferencias rápidas apoyándose en Wi‑Fi</td>
+</tr>
+<tr>
+<td>4.0</td>
+<td>2010</td>
+<td>Aparece <strong>BLE</strong>: wearables e IoT</td>
+</tr>
+<tr>
+<td>5.x</td>
+<td>2016 en adelante</td>
+<td>Más alcance y velocidad en BLE, audio LE</td>
+</tr>
+</tbody>
+</table>
+<h3 id="zigbee-ieee-802154">Zigbee (IEEE 802.15.4)<a class="headerlink" href="#zigbee-ieee-802154" title="Permanent link">&para;</a></h3>
+<p>Redes de sensores y domótica: poca velocidad, muy bajo consumo y <strong>topología en malla</strong>, en la que cada nodo reenvía los mensajes de los demás para ampliar la cobertura. Se usa en sensores de puertas, termostatos e iluminación inteligente.</p>
+<h3 id="nfc">NFC<a class="headerlink" href="#nfc" title="Permanent link">&para;</a></h3>
+<p>Comunicación a <strong>muy corta distancia</strong> (unos 4 cm): pagos con móvil, tarjetas de transporte, control de accesos y etiquetas inteligentes. Su seguridad se basa precisamente en esa distancia mínima, que obliga a aproximar físicamente los dispositivos.</p>
+<div class="admonition warning">
+<p class="admonition-title">Corrección frecuente</p>
+<p>NFC <strong>no pertenece al 802.15.3</strong>. Está definido por las normas <strong>ISO/IEC 14443 e ISO/IEC 18092</strong>, y trabaja en 13,56 MHz. El grupo IEEE 802.15.3 corresponde a WPAN de alta velocidad (UWB), poco relevante en SMR.</p>
+</div>
+<h2 id="wifi-ieee-80211">Wi‑Fi (IEEE 802.11)<a class="headerlink" href="#wifi-ieee-80211" title="Permanent link">&para;</a></h2>
+<p>Es la tecnología inalámbrica que instalarás y configurarás en tu trabajo, así que es la parte central del apartado.</p>
+<h3 id="elementos-de-una-red-wifi">Elementos de una red Wi‑Fi<a class="headerlink" href="#elementos-de-una-red-wifi" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Elemento</th>
+<th>Función</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Punto de acceso (<abbr title="Actividades de profundización.">AP</abbr>)</strong></td>
+<td>Emite la red y conecta los clientes al cableado; suele alimentarse por <strong>PoE</strong></td>
+</tr>
+<tr>
+<td><strong>SSID</strong></td>
+<td>El nombre visible de la red</td>
+</tr>
+<tr>
+<td><strong>BSSID</strong></td>
+<td>La dirección MAC del <abbr title="Actividades de profundización.">AP</abbr>, que identifica cada punto de acceso</td>
+</tr>
+<tr>
+<td><strong>Cliente</strong></td>
+<td>Portátil, móvil, impresora… con adaptador Wi‑Fi</td>
+</tr>
+<tr>
+<td><strong>Controlador / sistema mesh</strong></td>
+<td>Gestiona varios <abbr title="Actividades de profundización.">AP</abbr> con el mismo SSID y facilita el <strong>roaming</strong> entre ellos</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Modos de funcionamiento:</strong></p>
+<ul>
+<li><strong>Infraestructura</strong>: todos los clientes se conectan a través de un <abbr title="Actividades de profundización.">AP</abbr>. Es el modo normal.</li>
+<li><strong>Ad hoc / Wi‑Fi Direct</strong>: dos equipos se conectan entre sí sin <abbr title="Actividades de profundización.">AP</abbr> (compartir pantalla, imprimir directamente).</li>
+</ul>
+<h3 id="estandares-wifi">Estándares Wi‑Fi<a class="headerlink" href="#estandares-wifi" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Estándar</th>
+<th>Nombre comercial</th>
+<th>Año</th>
+<th>Banda</th>
+<th>Velocidad máxima teórica</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>802.11g</td>
+<td>—</td>
+<td>2003</td>
+<td>2,4 GHz</td>
+<td>54 Mbps</td>
+</tr>
+<tr>
+<td>802.11n</td>
+<td><strong>Wi‑Fi 4</strong></td>
+<td>2009</td>
+<td>2,4 y 5 GHz</td>
+<td>600 Mbps (MIMO)</td>
+</tr>
+<tr>
+<td>802.11ac</td>
+<td><strong>Wi‑Fi 5</strong></td>
+<td>2013</td>
+<td>5 GHz</td>
+<td>Varios Gbps (MU‑MIMO)</td>
+</tr>
+<tr>
+<td>802.11ax</td>
+<td><strong>Wi‑Fi 6 / 6E</strong></td>
+<td>2019</td>
+<td>2,4, 5 y 6 GHz</td>
+<td>Hasta 9,6 Gbps (OFDMA)</td>
+</tr>
+<tr>
+<td>802.11be</td>
+<td><strong>Wi‑Fi 7</strong></td>
+<td>2024</td>
+<td>2,4, 5 y 6 GHz</td>
+<td>Decenas de Gbps (Multi‑Link)</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition important">
+<p class="admonition-title">Velocidad teórica ≠ velocidad real</p>
+<p>Las cifras de la tabla son máximos de laboratorio, sumando todos los flujos del <abbr title="Actividades de profundización.">AP</abbr>. En un aula, esa velocidad se <strong>reparte entre todos los clientes</strong> y se reduce por la distancia, los obstáculos y las redes vecinas. Una red Wi‑Fi 6 que anuncia 9,6 Gbps puede dar 200 Mbps reales por equipo, y seguir siendo correcta.</p>
+</div>
+<p>Lo importante de las versiones recientes no es la velocidad máxima, sino que gestionan mejor <strong>muchos clientes a la vez</strong> (OFDMA y MU‑MIMO), que es exactamente el problema de un aula con treinta portátiles.</p>
+<h3 id="canales-y-solapamiento">Canales y solapamiento<a class="headerlink" href="#canales-y-solapamiento" title="Permanent link">&para;</a></h3>
+<p>Cada banda se divide en <strong>canales</strong>. En 2,4 GHz hay canales del 1 al 13, pero son tan anchos que se solapan entre sí: solo <strong>1, 6 y 11</strong> no se pisan.</p>
+<ul>
+<li>Si dos <abbr title="Actividades de profundización.">AP</abbr> cercanos usan canales solapados (por ejemplo, el 3 y el 5), se interfieren y ambos van peor.</li>
+<li>En la banda de 5 GHz hay muchos más canales sin solapamiento, aunque algunos exigen <strong>DFS</strong>: el <abbr title="Actividades de profundización.">AP</abbr> debe liberar el canal si detecta un radar.</li>
+</ul>
+<h3 id="seguridad">Seguridad<a class="headerlink" href="#seguridad" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Protocolo</th>
+<th>Valoración</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>WEP</strong></td>
+<td>Roto desde hace años, se descifra en minutos. <strong>No usar</strong></td>
+</tr>
+<tr>
+<td><strong>WPA / TKIP</strong></td>
+<td>Obsoleto</td>
+</tr>
+<tr>
+<td><strong>WPA2‑PSK (AES)</strong></td>
+<td>Mínimo aceptable hoy</td>
+</tr>
+<tr>
+<td><strong>WPA3</strong></td>
+<td>Recomendado; mejora el cifrado y protege contra ataques de diccionario</td>
+</tr>
+<tr>
+<td><strong>WPA2/WPA3‑Enterprise</strong></td>
+<td>Con usuario y contraseña individuales mediante RADIUS; lo habitual en centros educativos y empresas</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition danger">
+<p class="admonition-title">Falsas medidas de seguridad</p>
+<ul>
+<li><strong>Ocultar el SSID</strong> no protege: la red sigue siendo detectable y los clientes la delatan al buscarla.</li>
+<li>El <strong>filtrado por MAC</strong> se salta fácilmente, porque una MAC se puede clonar.</li>
+<li><strong>WPS</strong> con PIN es vulnerable por diseño: conviene desactivarlo.</li>
+</ul>
+<p>Lo que realmente protege es <strong>WPA2/WPA3 con una contraseña larga</strong>, cambiar las credenciales de administración del <abbr title="Actividades de profundización.">AP</abbr> y mantener el firmware actualizado. Añade una <strong>red de invitados</strong> aislada para visitantes.</p>
+</div>
+<h2 id="wimax-ieee-80216">WiMAX (IEEE 802.16)<a class="headerlink" href="#wimax-ieee-80216" title="Permanent link">&para;</a></h2>
+<p>Tecnología de área metropolitana para dar acceso a Internet de banda ancha a través de antenas, con alcances de decenas de kilómetros. Se concibió para llevar conexión a zonas rurales sin cobertura de cable.</p>
+<p>Hoy tiene un valor sobre todo <strong>histórico</strong>: su papel lo han ocupado el 4G y el 5G fijo (<strong>FWA</strong>) y los enlaces inalámbricos de los operadores locales. Conviene conocer la idea, no memorizar la evolución de sus subestándares.</p>
+<h2 id="redes-moviles-wwan">Redes móviles (WWAN)<a class="headerlink" href="#redes-moviles-wwan" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Generación</th>
+<th>Época</th>
+<th>Aportación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1G</strong></td>
+<td>Años 80</td>
+<td>Analógica, solo voz</td>
+</tr>
+<tr>
+<td><strong>2G</strong></td>
+<td>Años 90</td>
+<td>Digital: voz y <strong>SMS</strong> (GSM)</td>
+</tr>
+<tr>
+<td><strong>3G</strong></td>
+<td>2003</td>
+<td>Internet móvil</td>
+</tr>
+<tr>
+<td><strong>4G (LTE)</strong></td>
+<td>2009</td>
+<td>Banda ancha móvil, todo sobre IP</td>
+</tr>
+<tr>
+<td><strong>5G</strong></td>
+<td>2020 en adelante</td>
+<td>Gbps, latencia muy baja y gran densidad de dispositivos (IoT)</td>
+</tr>
+</tbody>
+</table>
+<p>En redes locales, estas tecnologías aparecen sobre todo como <strong>acceso de respaldo</strong>: un router 4G/5G que mantiene la conexión de una oficina si cae la fibra, o que da servicio en ubicaciones temporales.</p>
+<h2 id="buenas-practicas-al-desplegar-wifi">Buenas prácticas al desplegar Wi‑Fi<a class="headerlink" href="#buenas-practicas-al-desplegar-wifi" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Colocar los <abbr title="Actividades de profundización.">AP</abbr> en el <strong>techo y en zonas despejadas</strong>, nunca dentro de armarios metálicos.</li>
+<li>Varios <abbr title="Actividades de profundización.">AP</abbr> con <strong>menos potencia</strong> cubren mejor que uno solo a máxima potencia.</li>
+<li>Planificar los canales (1, 6 y 11 en 2,4 GHz) y aprovechar la banda de 5 GHz en aulas con muchos equipos.</li>
+<li>Alimentar los <abbr title="Actividades de profundización.">AP</abbr> por <strong>PoE</strong> para no depender de enchufes.</li>
+<li>Usar el mismo <strong>SSID</strong> en todos los <abbr title="Actividades de profundización.">AP</abbr> para permitir el <em>roaming</em>.</li>
+<li>Proteger con <strong>WPA2/WPA3</strong> y separar la red de invitados.</li>
+</ul>
+<h2 id="actividades">Actividades<a class="headerlink" href="#actividades" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p><strong><abbr title="Actividades de clase.">AC</abbr> 216.</strong> (RA2 / CE2a, CE2c / <abbr title="Escala de valores.">IC1</abbr> / 3p). Clasifica estas tecnologías según su alcance (<strong>WPAN, WLAN, WMAN o WWAN</strong>) e indica la <strong>banda de frecuencia</strong> en la que trabajan y un <strong>uso real</strong> de cada una: Bluetooth, Wi‑Fi 6, 5G, Zigbee, NFC y WiMAX.
+Añade una fila más con una tecnología <strong>guiada</strong> y explica en dos líneas qué ventaja aporta frente a todas las anteriores.</p>
+</li>
+<li>
+<p><strong><abbr title="Actividades de clase.">AC</abbr> 217.</strong> (RA2 / CE2c, CE2d / <abbr title="Escala de valores.">IC1</abbr> / 3p). En el aula se va a instalar un punto de acceso nuevo. Un análisis del entorno detecta estas redes vecinas en 2,4 GHz:</p>
+<table>
+<thead>
+<tr>
+<th>Red vecina</th>
+<th>Canal</th>
+<th>Nivel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AULA‑2</td>
+<td>1</td>
+<td>−52 dBm</td>
+</tr>
+<tr>
+<td>SECRETARIA</td>
+<td>6</td>
+<td>−61 dBm</td>
+</tr>
+<tr>
+<td>WIFI_VECINO</td>
+<td>11</td>
+<td>−78 dBm</td>
+</tr>
+<tr>
+<td>TALLER</td>
+<td>3</td>
+<td>−55 dBm</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>a) ¿Qué canal elegirías para el <abbr title="Actividades de profundización.">AP</abbr> nuevo y por qué? ¿Qué problema tiene la red TALLER?</li>
+<li>b) ¿Por qué solo se consideran "buenos" los canales 1, 6 y 11 en esta banda?</li>
+<li>c) Decide la banda (2,4 o 5 GHz) más adecuada en cada caso, justificándolo: aula con 30 portátiles trabajando a la vez; almacén grande y diáfano con lectores de códigos de barras; despacho separado del <abbr title="Actividades de profundización.">AP</abbr> por dos muros de hormigón.</li>
+</ul>
+</li>
+<li>
+<p><strong><abbr title="Actividades de clase.">AC</abbr> 218.</strong> (RA2 / CE2d, CE2e / <abbr title="Escala de valores.">IC1</abbr> / 3p). Un cliente te enseña la configuración de su router:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1">SSID: (oculto)
+</span><span id="__span-0-2">Seguridad: WEP 128 bits
+</span><span id="__span-0-3">Contraseña Wi-Fi: 12345678
+</span><span id="__span-0-4">WPS: activado (PIN)
+</span><span id="__span-0-5">Filtrado MAC: activado
+</span><span id="__span-0-6">Usuario admin del router: admin / admin
+</span><span id="__span-0-7">Firmware: versión de 2016
+</span><span id="__span-0-8">Red de invitados: no configurada
+</span></code></pre></div>
+<ul>
+<li>a) Señala <strong>todos</strong> los problemas de seguridad y ordénalos de más a menos grave.</li>
+<li>b) Propón la configuración correcta para cada punto.</li>
+<li>c) Explica en tres líneas por qué ocultar el SSID y filtrar por MAC <strong>no son medidas de seguridad reales</strong>.</li>
+</ul>
+</li>
+<li>
+<p><strong><abbr title="Actividades de clase.">AC</abbr> 219.</strong> (RA2 // CE2b, CE2d, CE2e / <abbr title="Escala de valores.">IC1</abbr> / 3p). </p>
+<ul>
+<li>
+<p><strong>Parte 1. Despliegue.</strong> Una academia ocupa una planta de 40 × 15 m con seis aulas, un pasillo central y una sala de profesores. Indica:</p>
+<ul>
+<li>a) Cuántos puntos de acceso instalarías aproximadamente y dónde los colocarías.</li>
+<li>b) Cómo los alimentarías y cómo los conectarías a la red cableada.</li>
+<li>c) Qué SSID y qué canales configurarías, y por qué no conviene poner un único <abbr title="Actividades de profundización.">AP</abbr> a máxima potencia.</li>
+</ul>
+</li>
+<li>
+<p><strong>Parte 2. Diagnóstico.</strong> Indica causa probable y solución:</p>
+<ul>
+<li>d) La conexión Wi‑Fi de la cafetería se corta todos los días a la hora del almuerzo, justo cuando se usa el microondas.</li>
+<li>e) Un <abbr title="Actividades de profundización.">AP</abbr> instalado dentro del armario de comunicaciones metálico y cerrado apenas da cobertura en el aula contigua.</li>
+<li>f) Un portátil situado a 3 m del <abbr title="Actividades de profundización.">AP</abbr> navega bien, pero otro al fondo del aula, con −82 dBm, va muy lento y pierde la conexión.</li>
+<li>g) La red anuncia Wi‑Fi 6 con 9,6 Gbps, pero al medir con 25 alumnos conectados cada uno obtiene menos de 30 Mbps. El cliente cree que le han vendido un equipo defectuoso.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<details style="display:none">
+<summary><strong>Solucionario orientativo (para el docente)</strong></summary>
+
+**AC216.** Bluetooth: WPAN, 2,4 GHz, auriculares. Wi‑Fi 6: WLAN, 2,4/5/6 GHz, red del aula. 5G: WWAN, sub‑6 GHz y ondas milimétricas, Internet móvil. Zigbee: WPAN, 2,4 GHz y 868 MHz, domótica. NFC: WPAN de proximidad, 13,56 MHz, pago con móvil. WiMAX: WMAN, microondas, acceso rural (hoy en desuso). Medio guiado: par trenzado o fibra, con ancho de banda estable, sin medio compartido y mayor seguridad física.
+
+**AC217.** a) El canal 11, el más libre y con la vecina más débil; TALLER está en el canal 3, que se solapa con el 1 y el 6 y perjudica a todos. b) Porque los canales de 2,4 GHz tienen 20 MHz de ancho y están separados solo 5 MHz: 1, 6 y 11 son los únicos que no se pisan. c) Aula con 30 portátiles: 5 GHz, más canales y menos saturación. Almacén diáfano: 2,4 GHz, mayor alcance y los lectores suelen ser equipos sencillos. Despacho tras dos muros: 2,4 GHz por su mejor penetración, o mejor aún un segundo AP.
+
+**AC218.** a) De más a menos grave: WEP (cifrado roto), credenciales admin/admin, WPS con PIN activado, contraseña de 12345678, firmware sin actualizar desde 2016, ausencia de red de invitados; SSID oculto y filtrado MAC son inútiles, pero no peligrosos. b) WPA2‑AES o WPA3, contraseña larga y aleatoria, WPS desactivado, credenciales de administración propias, firmware actualizado, red de invitados aislada, SSID visible. c) El SSID se descubre escuchando el tráfico de los clientes y la MAC puede clonarse; ambas medidas dan una falsa sensación de seguridad y complican el uso legítimo.
+
+**AC219.** a) Unos 3 AP distribuidos por el pasillo o en techos de aulas alternas, evitando esquinas y armarios. b) PoE desde el switch, con cable de par trenzado al rack (recordar el límite de 100 m). c) Mismo SSID en todos para permitir roaming, canales 1, 6 y 11 en 2,4 GHz y canales distintos en 5 GHz; un solo AP a máxima potencia deja zonas sin cobertura, los clientes lejanos negocian a baja velocidad y penalizan a toda la celda. d) Interferencia del microondas en 2,4 GHz → pasar los clientes a 5 GHz o alejar el AP del microondas. e) El metal bloquea la señal → sacar el AP del armario y montarlo en el techo. f) Nivel de señal muy bajo por distancia y obstáculos → añadir un AP, reubicarlo o usar 2,4 GHz en ese extremo. g) No hay avería: la velocidad anunciada es un máximo teórico agregado que se reparte entre todos los clientes y se reduce con la distancia y las interferencias; conviene medir por cliente y valorar más AP.
+
+</details>
+
+<!-- Resultados de Aprendizaje & Criterios de Evaluación -->
+
+<!-- Instrumentos de Evaluación -->
+<!-- Instrumentos de Calificación -->
+<!-- Tipo de actividades -->
+<!-- Otras abreviaciones -->
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Pie" >
+        
+          
+          <a href="0204_FibraOptica.html" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Fibra óptica">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Anterior
+              </span>
+              <div class="md-ellipsis">
+                Fibra óptica
+              </div>
+            </div>
+          </a>
+        
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      2026-2027 Ginés López García
+    </div>
+  
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/in/gineslopez/" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/gines-lopez" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://gines-lopez.github.io" target="_blank" rel="noopener" title="gines-lopez.github.io" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M64 32C28.7 32 0 60.7 0 96v320c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64zm32 104c0-13.3 10.7-24 24-24 137 0 248 111 248 248 0 13.3-10.7 24-24 24s-24-10.7-24-24c0-110.5-89.5-200-200-200-13.3 0-24-10.7-24-24m0 96c0-13.3 10.7-24 24-24 83.9 0 152 68.1 152 152 0 13.3-10.7 24-24 24s-24-10.7-24-24c0-57.4-46.6-104-104-104-13.3 0-24-10.7-24-24m0 120a32 32 0 1 1 64 0 32 32 0 1 1-64 0"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/ginesenclase" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M357.2 48h70.6L273.6 224.2 455 464H313L201.7 318.6 74.5 464H3.8l164.9-188.5L-5.2 48h145.6l100.5 132.9zm-24.8 373.8h39.1L119.1 88h-42z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="mailto:<g.lopezgarcia2@edu.gva.es>" target="_blank" rel="noopener" title="" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4l208 156a48 48 0 0 0 57.6 0l208-156c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48zM0 196v188c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64V196L313.6 344.8c-34.1 25.6-81.1 25.6-115.2 0z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["header.autohide", "toc.integrate", "navigation.indexes", "navigation.top", "navigation.tracking", "navigation.footer", "toc.follow", "content.tooltips", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>
