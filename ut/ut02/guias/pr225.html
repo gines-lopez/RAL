@@ -1,0 +1,1366 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://github.com/gines-lopez/RAL/ut/ut02/guias/pr225.html">
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>PR225 — Conectar una LAN cableada e inalámbrica - Redes de Área Local</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../css/extra_index.css">
+    
+      <link rel="stylesheet" href="../../../css/extra_general.css">
+    
+      <link rel="stylesheet" href="../../../css/extra_pd.css">
+    
+      <link rel="stylesheet" href="../../../css/extra_tablasresumen.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#pr225-conectar-una-lan-cableada-e-inalambrica" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../../../index.html" title="Redes de Área Local" class="md-header__button md-logo" aria-label="Redes de Área Local" data-md-component="logo">
+      
+  <img src="../../../img/ral.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Redes de Área Local
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              PR225 — Conectar una LAN cableada e inalámbrica
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="blue"  aria-label="Cambiar a modo noche"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo noche" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="blue"  aria-label="Cambiar a modo día"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo día" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../index.html" title="Redes de Área Local" class="md-nav__button md-logo" aria-label="Redes de Área Local" data-md-component="logo">
+      
+  <img src="../../../img/ral.png" alt="logo">
+
+    </a>
+    Redes de Área Local
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UT 01. Introducción a redes
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    UT 01. Introducción a redes
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ut01/ResumenUT.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Propuesta didáctica UT 01
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ut01/0101_SistemasRed.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sistemas en red
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ut01/0102_Componentes.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Componentes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ut01/0103_ClasificacionRedes.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Clasificaciones de redes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ut01/0104_Transmision.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Transmisión y perturbación
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ut01/0105_Normalizacion.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Normalización
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UT 02. Medios de transmisión y capa física
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    UT 02. Medios de transmisión y capa física
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ResumenUT.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Propuesta didáctica UT 02
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../0201_MediosTransmision.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Medios de transmisión
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../0202_ParTrenzado.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Par trenzado
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../0203_Coaxial.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cable coaxial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../0204_FibraOptica.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fibra óptica
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../0205_MediosNoGuiados.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Medios no guiados
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../0206_Laboratorios.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Laboratorios
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="pr225-conectar-una-lan-cableada-e-inalambrica">PR225 — Conectar una LAN cableada e inalámbrica<a class="headerlink" href="#pr225-conectar-una-lan-cableada-e-inalambrica" title="Permanent link">&para;</a></h1>
+<p>En esta práctica abres una actividad oficial de Packet Tracer en la que todos los dispositivos ya están configurados pero <strong>ningún cable está puesto</strong>. Tu trabajo es elegir el cable correcto para cada conexión: cobre directo, cobre cruzado, serie, coaxial, fibra o consola. Después compruebas que todo funciona con <code>ping</code>, el navegador y el terminal de consola. Para terminar, pasas a la vista física y ves cómo se reparten los equipos en racks, mesas y edificios. Aquí no configuras direcciones: lo que se evalúa es que <strong>elijas bien el medio</strong> y sepas <strong>justificar por qué</strong>.</p>
+<h2 id="que-necesitas">Qué necesitas<a class="headerlink" href="#que-necesitas" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Packet Tracer con la sesión iniciada. Si aún no lo tienes listo, sigue la guía inicial.</li>
+<li>El fichero <code>PR225.pka</code> de Aules.</li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Sesión iniciada</p>
+<p>Si abres el <code>.pka</code> sin sesión iniciada en Packet Tracer, la actividad no se guarda correctamente. Entra primero con tu cuenta @alu.edu.gva.es y después abre el archivo.</p>
+</div>
+<h2 id="antes-de-empezar-tipos-de-cable">Antes de empezar: tipos de cable<a class="headerlink" href="#antes-de-empezar-tipos-de-cable" title="Permanent link">&para;</a></h2>
+<p>Cada conexión necesita un medio que encaje con el puerto y con el tipo de dispositivo. Ten esta tabla a mano mientras haces la práctica:</p>
+<table>
+<thead>
+<tr>
+<th>Cable en Packet Tracer</th>
+<th>Traducción</th>
+<th>Cuándo se usa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Copper Straight-Through</td>
+<td>Cobre directo</td>
+<td>Entre dispositivos de <strong>distinto</strong> tipo (por ejemplo PC ↔ switch, router ↔ switch)</td>
+</tr>
+<tr>
+<td>Copper Cross-Over</td>
+<td>Cobre cruzado</td>
+<td>Entre dispositivos del <strong>mismo</strong> grupo cuando no hay detección automática (por ejemplo router ↔ PC, switch ↔ switch)</td>
+</tr>
+<tr>
+<td>Serial DCE / Serial DTE</td>
+<td>Serie</td>
+<td>Enlaces WAN entre routers por puertos <code>Serial</code></td>
+</tr>
+<tr>
+<td>Coaxial</td>
+<td>Coaxial</td>
+<td>Conexiones de cable módem (puertos <code>Coax</code>)</td>
+</tr>
+<tr>
+<td>Fiber</td>
+<td>Fibra óptica</td>
+<td>Puertos de fibra (<code>FastEthernet</code> o <code>GigabitEthernet</code> con módulo de fibra)</td>
+</tr>
+<tr>
+<td>Console</td>
+<td>Consola</td>
+<td>Del puerto <code>RS232</code> de un PC al puerto <code>Console</code> de un router o switch. No da acceso a la red</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition info">
+<p class="admonition-title">Packet Tracer en inglés</p>
+<p>Esta guía usa los nombres de la interfaz en inglés, que es como aparece por defecto: <em>Connections</em>, <em>Desktop</em>, <em>Command Prompt</em>, <em>Web Browser</em>, <em>Terminal</em>, <em>Physical</em>, <em>Logical</em>… Entre paréntesis tienes la traducción.</p>
+</div>
+<h3 id="como-saber-si-has-acertado">Cómo saber si has acertado<a class="headerlink" href="#como-saber-si-has-acertado" title="Permanent link">&para;</a></h3>
+<p>Fíjate en las luces de los extremos del cable después de conectarlo:</p>
+<table>
+<thead>
+<tr>
+<th>Luz</th>
+<th>Significado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Verde</td>
+<td>Enlace activo: cable correcto</td>
+</tr>
+<tr>
+<td>Ámbar / naranja</td>
+<td>El puerto se está activando. Espera unos segundos</td>
+</tr>
+<tr>
+<td>Roja</td>
+<td>Cable incorrecto o puerto apagado</td>
+</tr>
+<tr>
+<td>Sin luz o negra</td>
+<td>Normal en el cable de consola</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Cómo elegir el puerto</p>
+<p>Al hacer clic en un dispositivo con un cable seleccionado, Packet Tracer te muestra una lista de puertos. Elige exactamente el que pide la tabla de direcciones: un puerto equivocado puede dar luz verde y aun así hacer que la actividad no puntúe.</p>
+</div>
+<h2 id="tabla-de-direcciones">Tabla de direcciones<a class="headerlink" href="#tabla-de-direcciones" title="Permanent link">&para;</a></h2>
+<p>Esta es la tabla de la actividad. Úsala para saber qué puerto va con qué puerto.</p>
+<table>
+<thead>
+<tr>
+<th>Dispositivo</th>
+<th>Interfaz</th>
+<th>Dirección IP</th>
+<th>Se conecta a</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cloud (nube)</td>
+<td>Eth6</td>
+<td>N/A</td>
+<td>F0/0 (Router0)</td>
+</tr>
+<tr>
+<td></td>
+<td>Coax7</td>
+<td>N/A</td>
+<td>Port 0 (Cable Modem)</td>
+</tr>
+<tr>
+<td>Cable Modem</td>
+<td>Port 0</td>
+<td>N/A</td>
+<td>Coax7 (Cloud)</td>
+</tr>
+<tr>
+<td></td>
+<td>Port 1</td>
+<td>N/A</td>
+<td>Internet (Wireless Router)</td>
+</tr>
+<tr>
+<td>Router0</td>
+<td>Console</td>
+<td>N/A</td>
+<td>RS232 (Configuration Terminal)</td>
+</tr>
+<tr>
+<td></td>
+<td>F0/0</td>
+<td>192.168.2.1/24</td>
+<td>Eth6 (Cloud)</td>
+</tr>
+<tr>
+<td></td>
+<td>F0/1</td>
+<td>10.0.0.1/24</td>
+<td>F0 (netacad.pka)</td>
+</tr>
+<tr>
+<td></td>
+<td>Ser0/0/0</td>
+<td>172.31.0.1/24</td>
+<td>Ser0/0 (Router1)</td>
+</tr>
+<tr>
+<td>Router1</td>
+<td>Ser0/0</td>
+<td>172.31.0.2/24</td>
+<td>Ser0/0/0 (Router0)</td>
+</tr>
+<tr>
+<td></td>
+<td>F1/0</td>
+<td>172.16.0.1/24</td>
+<td>F0/1 (Switch)</td>
+</tr>
+<tr>
+<td>Wireless Router</td>
+<td>Internet</td>
+<td>192.168.2.2/24</td>
+<td>Port 1 (Cable Modem)</td>
+</tr>
+<tr>
+<td></td>
+<td>Eth1</td>
+<td>192.168.1.1</td>
+<td>F0 (Family PC)</td>
+</tr>
+<tr>
+<td>Family PC</td>
+<td>F0</td>
+<td>192.168.1.102</td>
+<td>Eth1 (Wireless Router)</td>
+</tr>
+<tr>
+<td>Switch</td>
+<td>F0/1</td>
+<td>172.16.0.2</td>
+<td>F1/0 (Router1)</td>
+</tr>
+<tr>
+<td>netacad.pka</td>
+<td>F0</td>
+<td>10.0.0.254</td>
+<td>F0/1 (Router0)</td>
+</tr>
+<tr>
+<td>Configuration Terminal</td>
+<td>RS232</td>
+<td>N/A</td>
+<td>Console (Router0)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="parte-1-conectar-la-nube">Parte 1 — Conectar la nube<a class="headerlink" href="#parte-1-conectar-la-nube" title="Permanent link">&para;</a></h2>
+<h3 id="paso-1-nube-router0">Paso 1: Nube ↔ Router0<a class="headerlink" href="#paso-1-nube-router0" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Abajo a la izquierda, pulsa el icono del rayo naranja: <strong>Connections</strong> (conexiones).</li>
+<li>Conecta <strong>F0/0 del Router0</strong> con <strong>Eth6 de la nube</strong>. Ten en cuenta que, para Packet Tracer, la nube se comporta como un switch. Piensa qué cable corresponde entre un router y un switch.</li>
+<li>Comprueba las luces.</li>
+</ol>
+<h3 id="paso-2-nube-cable-modem">Paso 2: Nube ↔ cable módem<a class="headerlink" href="#paso-2-nube-cable-modem" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Conecta <strong>Coax7 de la nube</strong> con <strong>Port 0 del cable módem</strong>. Fíjate en el nombre del puerto: te dice qué medio necesitas.</li>
+<li>Comprueba las luces.</li>
+</ol>
+<h2 id="parte-2-conectar-el-router0">Parte 2 — Conectar el Router0<a class="headerlink" href="#parte-2-conectar-el-router0" title="Permanent link">&para;</a></h2>
+<h3 id="paso-1-router0-router1">Paso 1: Router0 ↔ Router1<a class="headerlink" href="#paso-1-router0-router1" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Conecta <strong>Ser0/0/0 del Router0</strong> con <strong>Ser0/0 del Router1</strong> usando uno de los cables serie.</li>
+<li>Pasa el ratón por encima del cable cuando esté puesto y fíjate en qué extremo tiene un icono de reloj.</li>
+</ol>
+<div class="admonition info">
+<p class="admonition-title">DCE y DTE</p>
+<p>En un enlace serie, un extremo hace de <strong>DCE</strong> (marca el ritmo del reloj) y el otro de <strong>DTE</strong>. En esta actividad la configuración ya está hecha, así que el enlace debe levantarse sea cual sea el cable serie que elijas.</p>
+</div>
+<h3 id="paso-2-router0-netacadpka">Paso 2: Router0 ↔ netacad.pka<a class="headerlink" href="#paso-2-router0-netacadpka" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Conecta <strong>F0/1 del Router0</strong> con <strong>F0 del servidor netacad.pka</strong>.</li>
+<li>Antes de elegir, piensa: un router y un PC o servidor transmiten por los mismos pines (1 y 2) y reciben por los mismos (3 y 6). Si ninguno de los dos detecta el cable automáticamente, ¿qué tiene que hacer el cable?</li>
+<li>Comprueba las luces. Si se quedan en rojo, quita el cable y prueba con el otro tipo de cobre.</li>
+</ol>
+<h3 id="paso-3-router0-terminal-de-configuracion">Paso 3: Router0 ↔ terminal de configuración<a class="headerlink" href="#paso-3-router0-terminal-de-configuracion" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Conecta el puerto <strong>Console del Router0</strong> con el puerto <strong>RS232 del Configuration Terminal</strong> (terminal de configuración).</li>
+<li>Este cable no lleva tráfico de red: solo sirve para administrar el router desde el terminal. Por eso no verás luces verdes.</li>
+</ol>
+<h2 id="parte-3-conectar-el-resto-de-dispositivos">Parte 3 — Conectar el resto de dispositivos<a class="headerlink" href="#parte-3-conectar-el-resto-de-dispositivos" title="Permanent link">&para;</a></h2>
+<h3 id="paso-1-router1-switch">Paso 1: Router1 ↔ switch<a class="headerlink" href="#paso-1-router1-switch" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Conecta <strong>F1/0 del Router1</strong> con <strong>F0/1 del switch</strong>.</li>
+<li>Antes de elegir el cable, pasa el ratón por encima de los dos puertos o abre la pestaña <strong>Physical</strong> del Router1 y mira qué módulo lleva en esa ranura.</li>
+<li>Espera unos segundos: la luz pasa de ámbar a verde cuando el puerto del switch termina de activarse.</li>
+</ol>
+<h3 id="paso-2-cable-modem-router-inalambrico">Paso 2: Cable módem ↔ router inalámbrico<a class="headerlink" href="#paso-2-cable-modem-router-inalambrico" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Conecta <strong>Port 1 del cable módem</strong> con el puerto <strong>Internet del router inalámbrico</strong>.</li>
+<li>Comprueba las luces.</li>
+</ol>
+<h3 id="paso-3-router-inalambrico-pc-familiar">Paso 3: Router inalámbrico ↔ PC familiar<a class="headerlink" href="#paso-3-router-inalambrico-pc-familiar" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Conecta <strong>Ethernet 1 del router inalámbrico</strong> con <strong>F0 del Family PC</strong> (PC familiar).</li>
+<li>Comprueba las luces.</li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Si una luz se queda roja</p>
+<p>No dejes el cable puesto "a ver si se arregla". Bórralo con la herramienta <strong>Delete</strong> (o la tecla Supr), vuelve a mirar qué dispositivos estás uniendo y repite la conexión.</p>
+</div>
+<h2 id="parte-4-verificar-las-conexiones">Parte 4 — Verificar las conexiones<a class="headerlink" href="#parte-4-verificar-las-conexiones" title="Permanent link">&para;</a></h2>
+<h3 id="paso-1-del-pc-familiar-a-netacadpka">Paso 1: Del PC familiar a netacad.pka<a class="headerlink" href="#paso-1-del-pc-familiar-a-netacadpka" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Haz clic en <strong>Family PC</strong> → pestaña <strong>Desktop</strong> → <strong>Command Prompt</strong> (símbolo del sistema).</li>
+<li>Escribe <code>ping netacad.pka</code> y anota el resultado.</li>
+<li>Cierra la ventana y abre <strong>Web Browser</strong> (navegador web). Escribe <code>http://netacad.pka</code> y pulsa <strong>Go</strong>. Anota qué aparece.</li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">El primer ping falla</p>
+<p>Es normal que la primera respuesta (o las dos primeras) dé <em>Request timed out</em>. Mientras tanto, los dispositivos están resolviendo direcciones con ARP. Si fallan las cuatro, revisa los cables del camino.</p>
+</div>
+<h3 id="paso-2-del-pc-familiar-al-switch">Paso 2: Del PC familiar al switch<a class="headerlink" href="#paso-2-del-pc-familiar-al-switch" title="Permanent link">&para;</a></h3>
+<ol>
+<li>En el <strong>Command Prompt</strong> del PC familiar, haz ping a la IP del switch (búscala en la tabla de direcciones).</li>
+<li>Anota el resultado y piensa por cuántos routers pasa la petición.</li>
+</ol>
+<h3 id="paso-3-entrar-al-router0-por-consola">Paso 3: Entrar al Router0 por consola<a class="headerlink" href="#paso-3-entrar-al-router0-por-consola" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Haz clic en <strong>Configuration Terminal</strong> → <strong>Desktop</strong> → <strong>Terminal</strong>. Acepta los valores por defecto con <strong>OK</strong>.</li>
+<li>Pulsa <strong>Intro</strong> hasta que aparezca el indicador del Router0.</li>
+<li>Escribe <code>show ip interface brief</code> y observa las columnas <em>Status</em> y <em>Protocol</em> de cada interfaz.</li>
+</ol>
+<h2 id="parte-5-examinar-la-topologia-fisica">Parte 5 — Examinar la topología física<a class="headerlink" href="#parte-5-examinar-la-topologia-fisica" title="Permanent link">&para;</a></h2>
+<p>Hasta ahora has trabajado en la vista <strong>Logical</strong> (lógica), que muestra qué está conectado con qué. La vista <strong>Physical</strong> (física) muestra <strong>dónde</strong> está cada equipo: ciudad, edificio, armario, rack y mesa.</p>
+<h3 id="paso-1-la-nube">Paso 1: La nube<a class="headerlink" href="#paso-1-la-nube" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Pulsa la pestaña <strong>Physical</strong> (o <strong>Shift + P</strong>). Para volver a la vista lógica, <strong>Shift + L</strong>.</li>
+<li>Haz clic en <strong>Home City</strong> (ciudad de residencia) y después en el icono de la nube.</li>
+<li>Cuenta los cables conectados al switch del rack azul.</li>
+<li>Pulsa <strong>Back</strong> (atrás) para volver a la ciudad.</li>
+</ol>
+<h3 id="paso-2-red-principal">Paso 2: Red principal<a class="headerlink" href="#paso-2-red-principal" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Haz clic en <strong>Primary Network</strong> (red principal). Pasa el ratón por encima de los cables.</li>
+<li>Anota qué hay sobre la mesa a la derecha del rack azul.</li>
+<li>Vuelve con <strong>Back</strong>.</li>
+</ol>
+<h3 id="paso-3-red-secundaria">Paso 3: Red secundaria<a class="headerlink" href="#paso-3-red-secundaria" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Haz clic en <strong>Secondary Network</strong> (red secundaria). Pasa el ratón por encima de los cables.</li>
+<li>Fíjate en los cables naranjas: cuenta cuántos llegan a cada dispositivo.</li>
+<li>Vuelve con <strong>Back</strong>.</li>
+</ol>
+<h3 id="paso-4-red-domestica">Paso 4: Red doméstica<a class="headerlink" href="#paso-4-red-domestica" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Haz clic en <strong>Home Network</strong> (red doméstica).</li>
+<li>Busca algún rack. Piensa por qué hay o no hay.</li>
+<li>Vuelve a la vista <strong>Logical</strong>.</li>
+</ol>
+<h2 id="parte-6-comprobar-la-puntuacion-desafio">Parte 6 — Comprobar la puntuación (desafío)<a class="headerlink" href="#parte-6-comprobar-la-puntuacion-desafio" title="Permanent link">&para;</a></h2>
+<p>Abre <strong>Check Results</strong> (comprobar resultados) en la ventana de instrucciones de la actividad y mira el porcentaje.</p>
+<ul>
+<li>Si no llegas al 100 %, abre la pestaña <strong>Assessment Items</strong> (elementos evaluados) y localiza qué conexión falla.</li>
+<li>Corrígela <strong>sin borrar el resto de cables</strong> y vuelve a comprobar.</li>
+</ul>
+<p>Anota qué falló la primera vez, si falló algo, y cómo lo detectaste.</p>
+<h2 id="preguntas-para-pr225pdf">Preguntas para PR225.pdf<a class="headerlink" href="#preguntas-para-pr225pdf" title="Permanent link">&para;</a></h2>
+<p>Responde en tu informe (frases completas):</p>
+<ol>
+<li>
+<p>Completa la tabla de conexiones con el cable que has usado y una justificación breve:</p>
+<table>
+<thead>
+<tr>
+<th>Conexión</th>
+<th>Cable utilizado</th>
+<th>Por qué</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Router0 F0/0 ↔ Nube Eth6</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Nube Coax7 ↔ Cable módem Port 0</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Router0 Ser0/0/0 ↔ Router1 Ser0/0</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Router0 F0/1 ↔ netacad.pka F0</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Router0 Console ↔ Terminal RS232</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Router1 F1/0 ↔ Switch F0/1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Cable módem Port 1 ↔ Router inalámbrico Internet</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Router inalámbrico Eth1 ↔ PC familiar F0</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>¿Por qué la conexión Router0–nube usa un cable distinto que la conexión Router0–netacad.pka si las dos son entre puertos FastEthernet?</p>
+</li>
+<li>¿Qué es la detección automática de MDI/MDIX (<em>auto-MDIX</em>) y qué cambiaría en esta práctica si todos los equipos la tuvieran?</li>
+<li>En el enlace serie, ¿qué extremo quedó como DCE? ¿Qué función tiene el DCE?</li>
+<li>¿Para qué sirve el cable de consola? ¿Por qué no da acceso a la red al terminal de configuración?</li>
+<li>¿Qué resultado obtuviste al hacer <code>ping netacad.pka</code> desde el PC familiar? ¿Por qué pueden fallar las primeras respuestas?</li>
+<li>¿Qué mostró el navegador al abrir <code>http://netacad.pka</code>? ¿Qué protocolos de la práctica anterior intervienen en esa petición?</li>
+<li>Al hacer ping al switch desde el PC familiar, ¿por qué dispositivos pasa la petición? Indica qué tipo de medio atraviesa en cada tramo.</li>
+<li>En la salida de <code>show ip interface brief</code>, ¿qué estado muestran las interfaces que has conectado? ¿Qué significaría ver <code>down/down</code> en una de ellas?</li>
+<li>Vista física: ¿cuántos cables llegan al switch del rack azul de la nube? ¿Qué hay en la mesa junto al rack de la red principal?</li>
+<li>¿Por qué cada dispositivo de la red secundaria tiene dos cables naranjas? ¿Qué medio son?</li>
+<li>¿Por qué no hay rack en la red doméstica? ¿Qué diferencias ves entre la vista lógica y la vista física?</li>
+<li>¿En qué capa del modelo OSI trabajan los cables y conectores? Relaciona esta práctica con lo que viste en PR223 sobre la capa 1.</li>
+</ol>
+<h2 id="entrega-en-aules">Entrega en Aules<a class="headerlink" href="#entrega-en-aules" title="Permanent link">&para;</a></h2>
+<p>Sube <code>PR225.pka</code> y <code>PR225.pdf</code> con:</p>
+<ul>
+<li>Captura de la topología lógica con <strong>todos los cables conectados</strong> y luces en verde.</li>
+<li>Captura del <code>ping netacad.pka</code> desde el PC familiar.</li>
+<li>Captura del navegador del PC familiar mostrando <code>http://netacad.pka</code>.</li>
+<li>Captura del <code>ping</code> al switch.</li>
+<li>Captura de <code>show ip interface brief</code> en el Router0 desde el terminal de configuración.</li>
+<li>Captura de <strong>Check Results</strong> al 100 %.</li>
+<li>Al menos una captura de la vista física (nube, red principal, secundaria o doméstica).</li>
+<li>Las respuestas a las preguntas de arriba.</li>
+</ul>
+<p>Sin nombres, correos ni datos personales en capturas ni en el <code>.pdf</code>.</p>
+<h2 id="antes-de-entregar">Antes de entregar<a class="headerlink" href="#antes-de-entregar" title="Permanent link">&para;</a></h2>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Sesión iniciada en Packet Tracer</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Las ocho conexiones hechas con el cable correcto</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Ping a netacad.pka y al switch comprobados</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Web de netacad.pka abierta desde el navegador</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <code>show ip interface brief</code> revisado desde la consola</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Vista física explorada (Parte 5)</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Check Results al 100 %</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Tabla de conexiones completada</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <code>PR225.pka</code> y <code>PR225.pdf</code> listos para Aules</li>
+</ul>
+<h2 id="rubrica">Rúbrica<a class="headerlink" href="#rubrica" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Criterio</th>
+<th>Descripción</th>
+<th>Puntos</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Conexiones correctas</td>
+<td>Los ocho enlaces hechos con el cable y el puerto adecuados; actividad al 100 %</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Justificación de medios</td>
+<td>Tabla de conexiones razonada: directo/cruzado, serie DCE/DTE, coaxial, fibra y consola</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Verificación</td>
+<td>Ping, navegador y <code>show ip interface brief</code> ejecutados e interpretados correctamente</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Topología física</td>
+<td>Preguntas de la vista física respondidas y diferencia lógica/física explicada</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Entrega</td>
+<td><code>.pka</code> que abre bien y <code>.pdf</code> claro, con capturas pedidas y sin datos personales</td>
+<td>2</td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td></td>
+<td><strong>/10</strong></td>
+</tr>
+</tbody>
+</table>
+<!-- Resultados de Aprendizaje & Criterios de Evaluación -->
+
+<!-- Instrumentos de Evaluación -->
+<!-- Instrumentos de Calificación -->
+<!-- Tipo de actividades -->
+<!-- Otras abreviaciones -->
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      2026-2027 Ginés López García
+    </div>
+  
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/in/gineslopez/" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/gines-lopez" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://gines-lopez.github.io" target="_blank" rel="noopener" title="gines-lopez.github.io" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M64 32C28.7 32 0 60.7 0 96v320c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64zm32 104c0-13.3 10.7-24 24-24 137 0 248 111 248 248 0 13.3-10.7 24-24 24s-24-10.7-24-24c0-110.5-89.5-200-200-200-13.3 0-24-10.7-24-24m0 96c0-13.3 10.7-24 24-24 83.9 0 152 68.1 152 152 0 13.3-10.7 24-24 24s-24-10.7-24-24c0-57.4-46.6-104-104-104-13.3 0-24-10.7-24-24m0 120a32 32 0 1 1 64 0 32 32 0 1 1-64 0"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/ginesenclase" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M357.2 48h70.6L273.6 224.2 455 464H313L201.7 318.6 74.5 464H3.8l164.9-188.5L-5.2 48h145.6l100.5 132.9zm-24.8 373.8h39.1L119.1 88h-42z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="mailto:<g.lopezgarcia2@edu.gva.es>" target="_blank" rel="noopener" title="" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4l208 156a48 48 0 0 0 57.6 0l208-156c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48zM0 196v188c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64V196L313.6 344.8c-34.1 25.6-81.1 25.6-115.2 0z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["header.autohide", "toc.integrate", "navigation.indexes", "navigation.top", "navigation.tracking", "navigation.footer", "toc.follow", "content.tooltips", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>
