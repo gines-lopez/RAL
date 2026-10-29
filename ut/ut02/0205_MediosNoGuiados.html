@@ -1328,7 +1328,7 @@
 <p>Tres ideas para entender cualquier problema de cobertura:</p>
 <ol>
 <li><strong>A mayor frecuencia, más velocidad pero menos alcance.</strong> Los 2,4 GHz llegan más lejos y atraviesan mejor las paredes; los 5 y 6 GHz ofrecen más velocidad y menos interferencias, pero con menor penetración.</li>
-<li><strong>Los obstáculos atenúan.</strong> Un tabique resta poco, un muro de hormigón o un armario metálico pueden dejar una zona sin cobertura. El metal y el agua son especialmente malos: por eso un <abbr title="Actividades de profundización.">AP</abbr> dentro de un armario de comunicaciones cerrado apenas da señal.</li>
+<li><strong>Los obstáculos atenúan.</strong> Un tabique resta poco, un muro de hormigón o un armario metálico pueden dejar una zona sin cobertura. El metal y el agua son especialmente malos: por eso un <abbr title="Access Point">AP</abbr> dentro de un armario de comunicaciones cerrado apenas da señal.</li>
 <li><strong>La señal rebota (multitrayecto).</strong> Llega al receptor por varios caminos y con distinto retardo. Tecnologías como <strong>MIMO</strong> aprovechan estos rebotes usando varias antenas a la vez.</li>
 </ol>
 <p>La calidad se mide con el nivel de señal recibida, en <strong>dBm</strong>: valores en torno a −50 dBm son excelentes, −70 dBm aceptables y por debajo de −80 dBm la conexión es inestable.</p>
@@ -1435,16 +1435,16 @@
 </thead>
 <tbody>
 <tr>
-<td><strong>Punto de acceso (<abbr title="Actividades de profundización.">AP</abbr>)</strong></td>
-<td>Emite la red y conecta los clientes al cableado; suele alimentarse por <strong>PoE</strong></td>
+<td><strong>Punto de acceso (<abbr title="Access Point">AP</abbr>)</strong></td>
+<td>Emite la red y conecta los clientes al cableado; suele alimentarse por <strong><abbr title="Power over Ethernet">PoE</abbr></strong></td>
 </tr>
 <tr>
-<td><strong>SSID</strong></td>
+<td><strong><abbr title="Service Set Identifier">SSID</abbr></strong></td>
 <td>El nombre visible de la red</td>
 </tr>
 <tr>
 <td><strong>BSSID</strong></td>
-<td>La dirección MAC del <abbr title="Actividades de profundización.">AP</abbr>, que identifica cada punto de acceso</td>
+<td>La dirección MAC del <abbr title="Access Point">AP</abbr>, que identifica cada punto de acceso</td>
 </tr>
 <tr>
 <td><strong>Cliente</strong></td>
@@ -1452,14 +1452,14 @@
 </tr>
 <tr>
 <td><strong>Controlador / sistema mesh</strong></td>
-<td>Gestiona varios <abbr title="Actividades de profundización.">AP</abbr> con el mismo SSID y facilita el <strong>roaming</strong> entre ellos</td>
+<td>Gestiona varios <abbr title="Access Point">AP</abbr> con el mismo <abbr title="Service Set Identifier">SSID</abbr> y facilita el <strong>roaming</strong> entre ellos</td>
 </tr>
 </tbody>
 </table>
 <p><strong>Modos de funcionamiento:</strong></p>
 <ul>
-<li><strong>Infraestructura</strong>: todos los clientes se conectan a través de un <abbr title="Actividades de profundización.">AP</abbr>. Es el modo normal.</li>
-<li><strong>Ad hoc / Wi‑Fi Direct</strong>: dos equipos se conectan entre sí sin <abbr title="Actividades de profundización.">AP</abbr> (compartir pantalla, imprimir directamente).</li>
+<li><strong>Infraestructura</strong>: todos los clientes se conectan a través de un <abbr title="Access Point">AP</abbr>. Es el modo normal.</li>
+<li><strong>Ad hoc / Wi‑Fi Direct</strong>: dos equipos se conectan entre sí sin <abbr title="Access Point">AP</abbr> (compartir pantalla, imprimir directamente).</li>
 </ul>
 <h3 id="estandares-wifi">Estándares Wi‑Fi<a class="headerlink" href="#estandares-wifi" title="Permanent link">&para;</a></h3>
 <table>
@@ -1512,14 +1512,14 @@
 </table>
 <div class="admonition important">
 <p class="admonition-title">Velocidad teórica ≠ velocidad real</p>
-<p>Las cifras de la tabla son máximos de laboratorio, sumando todos los flujos del <abbr title="Actividades de profundización.">AP</abbr>. En un aula, esa velocidad se <strong>reparte entre todos los clientes</strong> y se reduce por la distancia, los obstáculos y las redes vecinas. Una red Wi‑Fi 6 que anuncia 9,6 Gbps puede dar 200 Mbps reales por equipo, y seguir siendo correcta.</p>
+<p>Las cifras de la tabla son máximos de laboratorio, sumando todos los flujos del <abbr title="Access Point">AP</abbr>. En un aula, esa velocidad se <strong>reparte entre todos los clientes</strong> y se reduce por la distancia, los obstáculos y las redes vecinas. Una red Wi‑Fi 6 que anuncia 9,6 Gbps puede dar 200 Mbps reales por equipo, y seguir siendo correcta.</p>
 </div>
 <p>Lo importante de las versiones recientes no es la velocidad máxima, sino que gestionan mejor <strong>muchos clientes a la vez</strong> (OFDMA y MU‑MIMO), que es exactamente el problema de un aula con treinta portátiles.</p>
 <h3 id="canales-y-solapamiento">Canales y solapamiento<a class="headerlink" href="#canales-y-solapamiento" title="Permanent link">&para;</a></h3>
 <p>Cada banda se divide en <strong>canales</strong>. En 2,4 GHz hay canales del 1 al 13, pero son tan anchos que se solapan entre sí: solo <strong>1, 6 y 11</strong> no se pisan.</p>
 <ul>
-<li>Si dos <abbr title="Actividades de profundización.">AP</abbr> cercanos usan canales solapados (por ejemplo, el 3 y el 5), se interfieren y ambos van peor.</li>
-<li>En la banda de 5 GHz hay muchos más canales sin solapamiento, aunque algunos exigen <strong>DFS</strong>: el <abbr title="Actividades de profundización.">AP</abbr> debe liberar el canal si detecta un radar.</li>
+<li>Si dos <abbr title="Access Point">AP</abbr> cercanos usan canales solapados (por ejemplo, el 3 y el 5), se interfieren y ambos van peor.</li>
+<li>En la banda de 5 GHz hay muchos más canales sin solapamiento, aunque algunos exigen <strong>DFS</strong>: el <abbr title="Access Point">AP</abbr> debe liberar el canal si detecta un radar.</li>
 </ul>
 <h3 id="seguridad">Seguridad<a class="headerlink" href="#seguridad" title="Permanent link">&para;</a></h3>
 <table>
@@ -1555,11 +1555,11 @@
 <div class="admonition danger">
 <p class="admonition-title">Falsas medidas de seguridad</p>
 <ul>
-<li><strong>Ocultar el SSID</strong> no protege: la red sigue siendo detectable y los clientes la delatan al buscarla.</li>
+<li><strong>Ocultar el <abbr title="Service Set Identifier">SSID</abbr></strong> no protege: la red sigue siendo detectable y los clientes la delatan al buscarla.</li>
 <li>El <strong>filtrado por MAC</strong> se salta fácilmente, porque una MAC se puede clonar.</li>
 <li><strong>WPS</strong> con PIN es vulnerable por diseño: conviene desactivarlo.</li>
 </ul>
-<p>Lo que realmente protege es <strong>WPA2/WPA3 con una contraseña larga</strong>, cambiar las credenciales de administración del <abbr title="Actividades de profundización.">AP</abbr> y mantener el firmware actualizado. Añade una <strong>red de invitados</strong> aislada para visitantes.</p>
+<p>Lo que realmente protege es <strong>WPA2/WPA3 con una contraseña larga</strong>, cambiar las credenciales de administración del <abbr title="Access Point">AP</abbr> y mantener el firmware actualizado. Añade una <strong>red de invitados</strong> aislada para visitantes.</p>
 </div>
 <h2 id="wimax-ieee-80216">WiMAX (IEEE 802.16)<a class="headerlink" href="#wimax-ieee-80216" title="Permanent link">&para;</a></h2>
 <p>Tecnología de área metropolitana para dar acceso a Internet de banda ancha a través de antenas, con alcances de decenas de kilómetros. Se concibió para llevar conexión a zonas rurales sin cobertura de cable.</p>
@@ -1604,11 +1604,11 @@
 <p>En redes locales, estas tecnologías aparecen sobre todo como <strong>acceso de respaldo</strong>: un router 4G/5G que mantiene la conexión de una oficina si cae la fibra, o que da servicio en ubicaciones temporales.</p>
 <h2 id="buenas-practicas-al-desplegar-wifi">Buenas prácticas al desplegar Wi‑Fi<a class="headerlink" href="#buenas-practicas-al-desplegar-wifi" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Colocar los <abbr title="Actividades de profundización.">AP</abbr> en el <strong>techo y en zonas despejadas</strong>, nunca dentro de armarios metálicos.</li>
-<li>Varios <abbr title="Actividades de profundización.">AP</abbr> con <strong>menos potencia</strong> cubren mejor que uno solo a máxima potencia.</li>
+<li>Colocar los <abbr title="Access Point">AP</abbr> en el <strong>techo y en zonas despejadas</strong>, nunca dentro de armarios metálicos.</li>
+<li>Varios <abbr title="Access Point">AP</abbr> con <strong>menos potencia</strong> cubren mejor que uno solo a máxima potencia.</li>
 <li>Planificar los canales (1, 6 y 11 en 2,4 GHz) y aprovechar la banda de 5 GHz en aulas con muchos equipos.</li>
-<li>Alimentar los <abbr title="Actividades de profundización.">AP</abbr> por <strong>PoE</strong> para no depender de enchufes.</li>
-<li>Usar el mismo <strong>SSID</strong> en todos los <abbr title="Actividades de profundización.">AP</abbr> para permitir el <em>roaming</em>.</li>
+<li>Alimentar los <abbr title="Access Point">AP</abbr> por <strong><abbr title="Power over Ethernet">PoE</abbr></strong> para no depender de enchufes.</li>
+<li>Usar el mismo <strong><abbr title="Service Set Identifier">SSID</abbr></strong> en todos los <abbr title="Access Point">AP</abbr> para permitir el <em>roaming</em>.</li>
 <li>Proteger con <strong>WPA2/WPA3</strong> y separar la red de invitados.</li>
 </ul>
 <h2 id="actividades">Actividades<a class="headerlink" href="#actividades" title="Permanent link">&para;</a></h2>
@@ -1651,9 +1651,9 @@ Añade una fila más con una tecnología <strong>guiada</strong> y explica en do
 </tbody>
 </table>
 <ul>
-<li>a) ¿Qué canal elegirías para el <abbr title="Actividades de profundización.">AP</abbr> nuevo y por qué? ¿Qué problema tiene la red TALLER?</li>
+<li>a) ¿Qué canal elegirías para el <abbr title="Access Point">AP</abbr> nuevo y por qué? ¿Qué problema tiene la red TALLER?</li>
 <li>b) ¿Por qué solo se consideran "buenos" los canales 1, 6 y 11 en esta banda?</li>
-<li>c) Decide la banda (2,4 o 5 GHz) más adecuada en cada caso, justificándolo: aula con 30 portátiles trabajando a la vez; almacén grande y diáfano con lectores de códigos de barras; despacho separado del <abbr title="Actividades de profundización.">AP</abbr> por dos muros de hormigón.</li>
+<li>c) Decide la banda (2,4 o 5 GHz) más adecuada en cada caso, justificándolo: aula con 30 portátiles trabajando a la vez; almacén grande y diáfano con lectores de códigos de barras; despacho separado del <abbr title="Access Point">AP</abbr> por dos muros de hormigón.</li>
 </ul>
 </li>
 <li>
@@ -1670,7 +1670,7 @@ Añade una fila más con una tecnología <strong>guiada</strong> y explica en do
 <ul>
 <li>a) Señala <strong>todos</strong> los problemas de seguridad y ordénalos de más a menos grave.</li>
 <li>b) Propón la configuración correcta para cada punto.</li>
-<li>c) Explica en tres líneas por qué ocultar el SSID y filtrar por MAC <strong>no son medidas de seguridad reales</strong>.</li>
+<li>c) Explica en tres líneas por qué ocultar el <abbr title="Service Set Identifier">SSID</abbr> y filtrar por MAC <strong>no son medidas de seguridad reales</strong>.</li>
 </ul>
 </li>
 <li>
@@ -1681,14 +1681,14 @@ Añade una fila más con una tecnología <strong>guiada</strong> y explica en do
 <ul>
 <li>a) Cuántos puntos de acceso instalarías aproximadamente y dónde los colocarías.</li>
 <li>b) Cómo los alimentarías y cómo los conectarías a la red cableada.</li>
-<li>c) Qué SSID y qué canales configurarías, y por qué no conviene poner un único <abbr title="Actividades de profundización.">AP</abbr> a máxima potencia.</li>
+<li>c) Qué <abbr title="Service Set Identifier">SSID</abbr> y qué canales configurarías, y por qué no conviene poner un único <abbr title="Access Point">AP</abbr> a máxima potencia.</li>
 </ul>
 </li>
 <li>
 <p><strong>Parte 2. Diagnóstico.</strong> Indica causa probable y solución:</p>
 <ul>
 <li>d) La conexión Wi‑Fi de la cafetería se corta todos los días a la hora del almuerzo, justo cuando se usa el microondas.</li>
-<li>e) Un <abbr title="Actividades de profundización.">AP</abbr> instalado dentro del armario de comunicaciones metálico y cerrado apenas da cobertura en el aula contigua.</li>
+<li>e) Un <abbr title="Access Point">AP</abbr> instalado dentro del armario de comunicaciones metálico y cerrado apenas da cobertura en el aula contigua.</li>
 <li>f) Un portátil situado a 3 m del PA navega bien, pero otro al fondo del aula, con −82 dBm, va muy lento y pierde la conexión.</li>
 <li>g) La red anuncia Wi‑Fi 6 con 9,6 Gbps, pero al medir con 25 alumnos conectados cada uno obtiene menos de 30 Mbps. El cliente cree que le han vendido un equipo defectuoso.</li>
 </ul>
