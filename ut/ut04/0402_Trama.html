@@ -11,6 +11,8 @@
         <link rel="canonical" href="https://github.com/gines-lopez/RAL/ut/ut04/0402_Trama.html">
       
       
+        <link rel="prev" href="0401_CapaEnlace.html">
+      
       
       
         
@@ -21,7 +23,7 @@
     
     
       
-        <title>0402 Trama - Redes de Área Local</title>
+        <title>Trama - Redes de Área Local</title>
       
     
     
@@ -124,7 +126,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              0402 Trama
+              Trama
             
           </span>
         </div>
@@ -1099,8 +1101,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -1108,15 +1112,17 @@
       
         
       
+        
+      
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
@@ -1137,7 +1143,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1204,6 +1210,114 @@
 
               
             
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trama
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="0402_Trama.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trama
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#campos-vision-smr" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Campos (visión SMR)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#crc-deteccion-de-errores" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CRC (detección de errores)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#actividades" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Actividades
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1228,16 +1342,14 @@
 
 
 
-  <h1>0402 Trama</h1>
-
-<h2 id="trama-ethernet-ieee-8023">Trama Ethernet (IEEE 802.3)<a class="headerlink" href="#trama-ethernet-ieee-8023" title="Permanent link">&para;</a></h2>
+<h1 id="trama-ethernet-ieee-8023">Trama Ethernet (IEEE 802.3)<a class="headerlink" href="#trama-ethernet-ieee-8023" title="Permanent link">&para;</a></h1>
 <p>La <strong>trama</strong> es la PDU de la capa de enlace. En Ethernet cableada usamos el formato <strong>IEEE 802.3</strong>.</p>
 <figure>
-  <a class="glightbox" href="../img/tema06-003.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Estructura de trama Ethernet" src="../img/tema06-003.png" width="800" /></a>
+  <a class="glightbox" href="../../img/ut04/tema06-003.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Estructura de trama Ethernet" src="../../img/ut04/tema06-003.png" width="800" /></a>
 <br />
 <figcaption>Estructura de una trama Ethernet IEEE 802.3</figcaption>
 </figure>
-<h3 id="campos-vision-smr">Campos (visión SMR)<a class="headerlink" href="#campos-vision-smr" title="Permanent link">&para;</a></h3>
+<h2 id="campos-vision-smr">Campos (visión SMR)<a class="headerlink" href="#campos-vision-smr" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
@@ -1279,7 +1391,7 @@
 <p class="admonition-title">Etiqueta VLAN</p>
 <p>En un enlace troncal puede aparecer una etiqueta <strong>802.1Q</strong> (4 bytes). Lo detallamos en el <strong>Tema 6</strong>.</p>
 </div>
-<h3 id="crc-deteccion-de-errores">CRC (detección de errores)<a class="headerlink" href="#crc-deteccion-de-errores" title="Permanent link">&para;</a></h3>
+<h2 id="crc-deteccion-de-errores">CRC (detección de errores)<a class="headerlink" href="#crc-deteccion-de-errores" title="Permanent link">&para;</a></h2>
 <ol>
 <li>El emisor calcula un valor CRC y lo pone en el <strong>FCS</strong>.</li>
 <li>El receptor recalcula el CRC.</li>
@@ -1287,10 +1399,51 @@
 </ol>
 <p>Ventajas: implementación sencilla en hardware y buena detección de errores por ruido. Limitación: <strong>detecta</strong>, no corrige.</p>
 <figure>
-  <a class="glightbox" href="../img/tema06-004.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Idea de CRC" src="../img/tema06-004.png" width="500" /></a>
+  <a class="glightbox" href="../../img/ut04/tema06-004.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Idea de CRC" src="../../img/ut04/tema06-004.png" width="500" /></a>
 <br />
 <figcaption>Idea de comprobación por CRC</figcaption>
 </figure>
+<h2 id="actividades">Actividades<a class="headerlink" href="#actividades" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p><strong>AC401</strong>. (RA1 // CE1a, CE1c // 3p). Esquema de la trama IEEE 802.3: campos, tamaño aproximado y función. Incluye un ejemplo con valores hexadecimales inventados (MAC origen/destino, tipo 0x0800) y explica el papel del FCS/CRC.</p>
+</li>
+<li>
+<p><strong>AC402</strong>. (RA1 // CE1a, CE1c // 2p). Dado el siguiente volcado hexadecimal del inicio de una trama (sin preámbulo), identifica y marca cada campo: MAC destino, MAC origen, Longitud/Tipo y comienzo de los datos. Indica qué protocolo de capa superior transporta y si la trama va dirigida a un equipo concreto o a todos.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><span class="linenos" data-linenos="1 "></span>FF FF FF FF FF FF F2 3E C1 8A B1 01 08 06 00 01
+</span><span id="__span-0-2"><span class="linenos" data-linenos="2 "></span>08 00 06 04 00 01 F2 3E C1 8A B1 01 C0 A8 01 0A
+</span></code></pre></div>
+</li>
+<li>
+<p><strong>AC403</strong>. (RA1 // CE1a, CE1c // 3p). Captura con <strong>Wireshark</strong> el tráfico de tu equipo mientras abres una página web. Selecciona una trama y anota: MAC origen y destino, valor del campo Tipo y tamaño total de la trama. Busca el <strong>OUI</strong> de ambas MAC en una base de datos pública de fabricantes e indica a qué fabricante pertenecen. Adjunta capturas de pantalla.</p>
+</li>
+<li>
+<p><strong>AC404</strong>. (RA1 // CE1a // 2p). Clasifica las siguientes direcciones MAC como <strong>unicast</strong> o <strong>broadcast</strong>, separa en cada una el OUI de la parte que identifica la tarjeta y busca el fabricante de las que sean unicast:</p>
+<ul>
+<li><code>00:1B:63:84:45:E6</code></li>
+<li><code>FF:FF:FF:FF:FF:FF</code></li>
+<li><code>3C:5A:B4:12:9F:0C</code></li>
+<li><code>B8:27:EB:A1:22:7D</code></li>
+</ul>
+</li>
+<li>
+<p><strong>AC405</strong>. (RA1 // CE1a, CE1c // 2p). Responde razonadamente con cálculos:</p>
+<ol>
+<li>¿Cuál es el tamaño mínimo y máximo de una trama 802.3 (sin contar preámbulo/SFD)?</li>
+<li>Si un equipo envía solo 20 bytes de datos, ¿cuántos bytes de relleno se añaden?</li>
+<li>Para una trama con 1500 bytes de datos, ¿qué porcentaje de la trama es carga útil? ¿Y con 46 bytes? ¿Qué conclusión sacas sobre la eficiencia?</li>
+</ol>
+</li>
+<li>
+<p><strong>AC406</strong>. (RA1 // CE1c // 3p). Simula el funcionamiento del CRC con un ejemplo reducido. Usa el mensaje <code>1101</code> y el polinomio generador <code>1011</code>:</p>
+<ol>
+<li>Calcula el resto mediante división binaria (XOR) y obtén la secuencia que se transmitiría.</li>
+<li>Haz de receptor: comprueba que la secuencia correcta da resto 0.</li>
+<li>Cambia un bit de la secuencia (simula ruido) y demuestra que el receptor detecta el error.</li>
+<li>Explica qué hace el equipo con esa trama y quién se encarga de la retransmisión.</li>
+</ol>
+</li>
+</ul>
 <!-- Resultados de Aprendizaje & Criterios de Evaluación -->
 
 <!-- Instrumentos de Evaluación -->
@@ -1327,6 +1480,28 @@
       
         <footer class="md-footer">
   
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Pie" >
+        
+          
+          <a href="0401_CapaEnlace.html" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Capa de enlace">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Anterior
+              </span>
+              <div class="md-ellipsis">
+                Capa de enlace
+              </div>
+            </div>
+          </a>
+        
+        
+      </nav>
     
   
   <div class="md-footer-meta md-typeset">
