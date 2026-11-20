@@ -92,6 +92,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#segmentacion-agrupacion-y-acceso-al-medio" class="md-skip">
+          Saltar a contenido
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -1173,7 +1178,7 @@
   <span class="md-ellipsis">
     
   
-    Propuesta didáctica UT 03
+    Propuesta didáctica UT 04
   
 
     
@@ -1256,6 +1261,26 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Segmentación, agrupación y acceso al medio
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="0403_SegmentaccionAgrupacionAcceso.html" class="md-nav__link md-nav__link--active">
         
@@ -1273,6 +1298,86 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#segmentacion-y-agrupacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Segmentación y agrupación
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#acceso-al-medio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Acceso al medio
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Acceso al medio">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#csmacd-idea-ethernet-clasico" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CSMA/CD (idea Ethernet clásico)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#csmaca-mencion-wifi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CSMA/CA (mención Wi‑Fi)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#actividad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Actividad
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1387,9 +1492,63 @@
 
 
 
-  <h1>Segmentación, agrupación y acceso al medio</h1>
+<h1 id="segmentacion-agrupacion-y-acceso-al-medio">Segmentación, agrupación y acceso al medio<a class="headerlink" href="#segmentacion-agrupacion-y-acceso-al-medio" title="Permanent link">&para;</a></h1>
+<h2 id="segmentacion-y-agrupacion">Segmentación y agrupación<a class="headerlink" href="#segmentacion-y-agrupacion" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Segmentación</strong>: si los datos son demasiado grandes, se parten en tramas (límite práctico ~1500 bytes de datos en Ethernet).</li>
+<li><strong>Agrupación</strong>: varios mensajes cortos pueden ir en una sola trama para reducir overhead de cabeceras.</li>
+</ul>
+<h2 id="acceso-al-medio">Acceso al medio<a class="headerlink" href="#acceso-al-medio" title="Permanent link">&para;</a></h2>
+<p>Cuando el medio se <strong>comparte</strong>, hacen falta reglas para no pisarse. Familias habituales:</p>
+<table>
+<thead>
+<tr>
+<th>Familia</th>
+<th>Idea</th>
+<th>Ejemplo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Particionado de canal</td>
+<td>Reparto fijo (tiempo / frecuencia)</td>
+<td>TDM, FDM</td>
+</tr>
+<tr>
+<td>Toma de turnos</td>
+<td>Solo transmite quien tiene permiso / testigo</td>
+<td>Polling, Token Ring</td>
+</tr>
+<tr>
+<td>Acceso aleatorio</td>
+<td>Compiten cuando necesitan</td>
+<td>ALOHA, CSMA/<abbr title="Campus Distributor">CD</abbr>, CSMA/CA</td>
+</tr>
+</tbody>
+</table>
+<h3 id="csmacd-idea-ethernet-clasico">CSMA/<abbr title="Campus Distributor">CD</abbr> (idea Ethernet clásico)<a class="headerlink" href="#csmacd-idea-ethernet-clasico" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>Carrier Sense</strong>: escuchar antes de transmitir.</li>
+<li><strong>Multiple Access</strong>: si está libre, transmitir.</li>
+<li><strong>Collision Detection</strong>: si hay colisión, parar, esperar un tiempo aleatorio (<strong>backoff</strong>) y reintentar.</li>
+</ol>
+<p>En redes modernas con <strong>switches full-dúplex</strong> las colisiones prácticamente desaparecen: cada puerto es un dominio de colisión propio.</p>
+<h3 id="csmaca-mencion-wifi">CSMA/CA (mención Wi‑Fi)<a class="headerlink" href="#csmaca-mencion-wifi" title="Permanent link">&para;</a></h3>
+<p>En inalámbrico (<strong>IEEE 802.11</strong>) se usa <strong>CSMA/CA</strong> (evitar colisiones), porque detectarlas en el aire es más difícil que en cable.</p>
+<div class="admonition tip">
+<p class="admonition-title">Diferencia clave</p>
+<p><strong>CSMA/<abbr title="Campus Distributor">CD</abbr></strong> detecta colisiones después (Ethernet cableado clásico). <strong>CSMA/CA</strong> intenta evitarlas antes (Wi‑Fi).</p>
+</div>
+<h2 id="actividad">Actividad<a class="headerlink" href="#actividad" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>AC407*. (RA1 // CE1a // </strong><abbr title="Actividades de clase.">AC</abbr> 0–1<strong>). Explica con un ejemplo cuándo conviene </strong>segmentar<strong> y cuándo </strong>agrupar** en la capa de enlace. Relaciónalo con el tamaño máximo de trama Ethernet y con la eficiencia.</li>
+</ul>
+<!-- Resultados de Aprendizaje & Criterios de Evaluación -->
 
-
+<!-- Instrumentos de Evaluación -->
+<!-- Instrumentos de Calificación -->
+<!-- Tipo de actividades -->
+<!-- Otras abreviaciones -->
 
 
 
